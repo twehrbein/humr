@@ -36,13 +36,15 @@ We use segmentation masks provided by BEDLAM and AGORA during training. Follow t
 
 ```  
 ${data}  
-|-- test_images
-|   |-- 3DPW
-|   |   |-- imageFiles
-|   |-- EMDB
-|   |   |-- masks
-|   |   |-- P0
-|   |   |-- P1
+|-- env_masks
+|   |-- 20221010_3_1000_batch01hand_6fps
+|   |   |-- seq_000000
+|   |   |-- seq_000001
+|   |   |-- ...
+|   |-- 20221010_3-10_500_batch01hand_zoom_suburb_d_6fps
+|   |-- ...
+|   |-- images
+|   |   |-- ag_trainset_3dpeople_bfh_archviz_5_10_cam00_00000_1280x720_all_person.png
 |   |   |-- ...
 ```  
 See below for instructions for 3DPW.
