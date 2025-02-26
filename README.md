@@ -22,7 +22,7 @@ conda activate humr
 3. [SMPL Utils](https://cloud.tnt.uni-hannover.de/index.php/s/WqZs5tLMJqcMj9f): Download <strong>utils.zip</strong> and extract it to `data/utils`.
 4. [Pretrained Weights](https://cloud.tnt.uni-hannover.de/index.php/s/WqZs5tLMJqcMj9f): Finally, place all pretrained checkpoints in `data/ckpt`.
 
-Additionally for training and evaluation, please follow the dataset preparation guide (COMING SOON). 
+Additionally for training and evaluation, please follow the dataset preparation guide [here](DATASET.MD). 
 
 ## Demo
 We provide a few examples in `data/examples`. Running the following demo will detect each person in each image and then run HUMR for 3D reconstruction. The resulting rendering will be saved to `logs/`
@@ -31,7 +31,16 @@ python demo.py --cfg configs/default_config.yaml --ckpt data/ckpt/humr_best.ckpt
 ```
 
 ## Training and evaluation
-Coming soon...
+Training can be started with:
+```
+python train.py --cfg configs/default_config.yaml --name expname
+```
+
+To evaluate the provided trained model:
+```
+python train.py --cfg configs/default_config.yaml --ckpt data/ckpt/humr_best.ckpt --test
+```
+
 
 ## Acknowledgements
 We benefit from many great resources including but not limited to: [SPIN](https://github.com/nkolot/SPIN), [CLIFF](https://github.com/huawei-noah/noah-research/tree/master/CLIFF), [ViTPose](https://github.com/JunkyByte/easy_ViTPose), [HRNet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch), [BEDLAM](https://github.com/pixelite1201/BEDLAM), [ProHMR](https://github.com/nkolot/ProHMR), [HuManiFlow](https://github.com/akashsengupta1997/HuManiFlow)
