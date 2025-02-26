@@ -8,7 +8,7 @@ We recommend creating a clean [conda](https://docs.conda.io/) environment. You c
 conda env create -f environment.yml
 ```
 
-A more cross-platform-friendly installation alternative could be to manually follow the commands in install_env.txt.
+A more cross-platform-friendly installation alternative could be to manually follow the commands in `install_env.txt`.
 
 
 After the installation is complete, you can activate the conda environment by running:
@@ -34,22 +34,15 @@ python demo.py --cfg configs/default_config.yaml --ckpt data/ckpt/humr_best.ckpt
 Coming soon...
 
 ## Acknowledgements
-We benefit from many great resources including but not limited to:
-- [SPIN](https://github.com/nkolot/SPIN)
-- [CLIFF](https://github.com/huawei-noah/noah-research/tree/master/CLIFF)
-- [ViTPose](https://github.com/JunkyByte/easy_ViTPose)
-- [HRNet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)
-- [BEDLAM](https://github.com/pixelite1201/BEDLAM)
-- [ProHMR](https://github.com/nkolot/ProHMR)
-- [HumaniFlow](https://github.com/akashsengupta1997/HuManiFlow)
+We benefit from many great resources including but not limited to: [SPIN](https://github.com/nkolot/SPIN), [CLIFF](https://github.com/huawei-noah/noah-research/tree/master/CLIFF), [ViTPose](https://github.com/JunkyByte/easy_ViTPose), [HRNet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch), [BEDLAM](https://github.com/pixelite1201/BEDLAM), [ProHMR](https://github.com/nkolot/ProHMR), [HuManiFlow](https://github.com/akashsengupta1997/HuManiFlow)
 
 
 ## Citing
 If you find the model and code useful, please consider citing the following paper:
 
-@InProceedings{wehrbein25humr,
-    author    = {Wehrbein, Tom and Rudolph, Marco and Rosenhahn, Bodo and Wandt, Bastian},
-    title     = {Utilizing Uncertainty in 2D Pose Detectors for Probabilistic 3D Human Mesh Recovery},
-    booktitle = {Winter Conference on Applications of Computer Vision (WACV)},
-    year      = {2025},
-}
+    @InProceedings{wehrbein25humr,
+        author    = {Wehrbein, Tom and Rudolph, Marco and Rosenhahn, Bodo and Wandt, Bastian},
+        title     = {Utilizing Uncertainty in 2D Pose Detectors for Probabilistic 3D Human Mesh Recovery},
+        booktitle = {Winter Conference on Applications of Computer Vision (WACV)},
+        year      = {2025},
+    }
