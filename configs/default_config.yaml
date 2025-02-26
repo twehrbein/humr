@@ -1,0 +1,41 @@
+DATASET:
+  BATCH_SIZE: 64
+  EVAL_BATCH_SIZE: 32
+  CROP_FACTOR: 0.5
+  CROP_PROB: 0.2
+  TRAIN_DS: '3dpw-train-smplx_static-hdri_agora-bfh_agora-body_zoom-suburbd_closeup-suburba_closeup-suburbb_closeup-suburbc_closeup-suburbd_closeup-gym_zoom-gym_static-gym_static-office_orbit-office_static-hdri-zoomed_pitchup-stadium_pitchdown-stadium_static-hdri-bmi_closeup-suburbb-bmi_closeup-suburbc-bmi_static-suburbd-bmi_zoom-gym-bmi_static-office-hair_zoom-suburbd-hair_static-gym-hair_orbit-archviz-15_orbit-archviz-19_orbit-archviz-12_orbit-archviz-10'
+  IMG_RES: 224
+  NUM_WORKERS: 8
+  PIN_MEMORY: true
+  SCALE_FACTOR: 0.25
+  SHUFFLE_TRAIN: true
+  VAL_DS: '3dpw-test-cam_emdb-p1_emdb-p1-occl'
+  TEST_DS: '3dpw-test-cam_emdb-p1_emdb-p1-occl'
+  ALB: true
+  FILTER_DATASET: true
+LOG_DIR: logs
+OPTIMIZER:
+  LR: 1e-4
+  WD: 1e-4
+MODEL:
+  BACKBONE: hrnet_w48-conv
+TRAINING:
+  MAX_EPOCHS: 30
+  PRETRAINED_CKPT: bedlam
+  FREEZE_BACKBONE: true
+  HM_SAMPLE_MAX_TH: 0.70
+  HM_SAMPLE_MIN_TH: 0.15
+  NUM_TRAIN_SAMPLES: 26  # 1 mode sample + N-1 random samples
+  NUM_TEST_SAMPLES: 100
+FREIA_NF:
+  CLAMP: 2.0
+  N_BLOCKS: 8
+  FC_SIZE: 1024
+  DROPOUT: 0.0
+LOSS_WEIGHTS:
+  KEYPOINTS_2D_HM_SAMPLE: 0.05
+  KEYPOINTS_2D_MODE: 0.01
+  LOCATION_MASK: 0.1
+  ORTHOGONAL: 0.1
+  BETAS_MODE: 0.0005
+  NLL: 0.1
