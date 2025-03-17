@@ -25,8 +25,8 @@ ${data}
 |   |   |-- ...
 ```  
 
-We provide parsed annotation files [here](https://cloud.tnt.uni-hannover.de/index.php/apps/files/files/9595601?dir=/WACV%202025/data/annotations). Please put them in `data/annotations`.
-Additionally, to speed up training, we precompute ViTPose predictions and save samples from the predicted heatmaps. They can be downloaded from [here](https://cloud.tnt.uni-hannover.de/index.php/apps/files/files/9595222?dir=/WACV%202025/data) and should be placed in `data/heatmap_samples`.
+We provide parsed annotation files [here](https://cloud.tnt.uni-hannover.de/index.php/s/jQjkkqFaiWdJrwL). Please put them in `data/annotations`.
+Additionally, to speed up training, we precompute ViTPose predictions and save samples from the predicted heatmaps. They can be downloaded from [here](https://cloud.tnt.uni-hannover.de/index.php/s/jQjkkqFaiWdJrwL) and should be placed in `data/heatmap_samples`.
 
 We use segmentation masks provided by BEDLAM and AGORA during training. Follow these steps to prepare the data:
 1. Download <strong>Training Masks 1280x720</strong> from [AGORA](https://agora.is.tue.mpg.de/download.php) and extract it.
@@ -51,7 +51,7 @@ See below for instructions for 3DPW.
 
 ## Evaluation data
 We use [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/) and [EMDB](https://eth-ait.github.io/emdb/) for evaluation. The image files can be downloaded from their websites.
-To evaluate the plausibility of generated hypotheses, we precompute person segmentation masks for a subset of EMDB and provided them [here](https://cloud.tnt.uni-hannover.de/index.php/apps/files/files/9595222?dir=/WACV%202025/data). 
+To evaluate the plausibility of generated hypotheses, we precompute person segmentation masks for a subset of EMDB and provided them [here](https://cloud.tnt.uni-hannover.de/index.php/s/jQjkkqFaiWdJrwL). 
 
 Please place the files such that the data folder has the following structure:
 ```  
