@@ -19,8 +19,8 @@ conda activate humr
 ## Prepare data
 1. [SMPL](https://smpl.is.tue.mpg.de/download.php): Please download <strong>version 1.1.0</strong>, extract it to `data/body_models` and rename the model files to SMPL_NEUTRAL/FEMALE/MALE.pkl.
 2. [SMPL-X](https://smpl-x.is.tue.mpg.de/download.php): Please download <strong>version 1.1</strong> and extract it to `data/body_models/smplx`.
-3. [SMPL Utils](https://cloud.tnt.uni-hannover.de/index.php/s/WqZs5tLMJqcMj9f): Download <strong>utils.zip</strong> and extract it to `data/utils`.
-4. [Pretrained Weights](https://cloud.tnt.uni-hannover.de/index.php/s/WqZs5tLMJqcMj9f): Finally, place all pretrained checkpoints in `data/ckpt`.
+3. [SMPL Utils](https://cloud.tnt.uni-hannover.de/index.php/s/jQjkkqFaiWdJrwL): Download <strong>utils.zip</strong> and extract it to `data/utils`.
+4. [Pretrained Weights](https://cloud.tnt.uni-hannover.de/index.php/s/jQjkkqFaiWdJrwL): Finally, place all pretrained checkpoints in `data/ckpt`.
 
 Additionally for training and evaluation, please follow the dataset preparation guide [here](DATASET.MD). 
 
